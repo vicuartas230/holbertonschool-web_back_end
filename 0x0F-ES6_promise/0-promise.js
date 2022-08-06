@@ -1,8 +1,8 @@
 function getResponseFromAPI() {
-    const promise = new Promise((resolve, reject) => {
-        resolve(1);
-    });
-    return promise;
+  const promise = new Promise((resolve) => {
+    resolve(1);
+  });
+  return promise;
 }
 
-export { getResponseFromAPI as default };
+module.exports = getResponseFromAPI;
