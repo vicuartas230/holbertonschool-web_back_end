@@ -1,4 +1,4 @@
-function signUpUser(firstName, lastName) {
+export default function signUpUser(firstName, lastName) {
   const promise = new Promise((resolve) => {
     resolve({
       firstName,
@@ -7,5 +7,3 @@ function signUpUser(firstName, lastName) {
   });
   return promise;
 }
-
-module.exports = signUpUser;

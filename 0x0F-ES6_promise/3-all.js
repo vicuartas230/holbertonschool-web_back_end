@@ -1,6 +1,6 @@
 import { uploadPhoto, createUser } from './utils';
 
-function handleProfileSignup() {
+export default function handleProfileSignup() {
   uploadPhoto()
     .then((res) => {
       createUser()
@@ -15,5 +15,3 @@ function handleProfileSignup() {
       console.log('Signup system offline');
     });
 }
-
-module.exports = handleProfileSignup;
